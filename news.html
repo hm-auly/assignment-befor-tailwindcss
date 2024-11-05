@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" class="dark"  id="htmlTag">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+      <!-- cdn added font-awesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+      <!-- css added link -->
+     <link rel="stylesheet" href="main.css">
+    <title>News Ticker AI</title>
+</head>
+<body class="bg-white dark:bg-gray-900 dark:text-white">
+    
+ <!-- header section start -->
+ <header class="sticky" >
+    <nav class="md:px-16 px-3 py-3 dark:bg-gray-900 bg-[#FFFFFF] flex justify-between items-center">
+        <div class="flex gap-1 md:gap-4 ">
+           <a href="index.html"> <img class="nd:w-[5.8rem] w-14  md:h-12 h-8" src="images/logo.png" alt=""></a>
+            <p class="text-[6px] flex items-center md:text-lg">A Mark Cuban Company
+               <br> AI-based Financial Market News Aggregator</p>
+        </div>
+        <div class="flex gap-2 md:gap-5 items-center">
+            <a  href="index.html"><button class="bg-[#5677AC] px-2 py-2 rounded-xl text-[8px] md:text-lg transition-all hover:scale-105">Personalize News</button></a>
+            <p class="font-serif bg-[#5677AC26]  h-9 md:h-12 w-9 md:w-12 rounded-full flex items-center justify-center ">IK</p>
+            <button id="moon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 hover:stroke-blue-500">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+                  </svg>     
+            </button>
+        </div>
+    </nav>
+</header>
+<!-- header section end -->
+
+<section class="bg-[#F0F0F0] w-full dark:bg-gray-900">
+    <section class="md:mx-36 md:py-6 text-center -3 ">
+        <div class="border-b border-black md:border-b-2 dark:border-white">
+            <h2 class="font-semibold py-2 dark:text-white text-lg md:text-2xl py-3 text-[#333333]">Personolize your news</h2>
+        </div>
+
+        <section class="md:mx-36 dark:bg-gray-900 bg-[#FFFFFF] md:my-10">
+            <div class="dark:bg-gray-900 space-y-4 mx-10 py-8">
+                <h4 class="font-semibold text-lg md:text-xl text-center">Select your  Markets</h4>
+                <p class="dark:bg-gray-500 font-medium text-sm md:text-lg bg-[#E6EBF3] rounded-full text-center py-1.5 transition-all hover:bg-[#969da9] cursor-pointer delay-300">Stocks</p>
+                <p class="dark:bg-gray-500 font-medium text-sm md:text-lg bg-[#E6EBF3] rounded-full text-center py-1.5 transition-all hover:bg-[#969da9]">Crypto</p>
+                <p class="dark:bg-gray-500 font-medium text-sm md:text-lg bg-[#E6EBF3] rounded-full text-center py-1.5 transition-all hover:bg-[#969da9] cursor-pointer delay-300">Economy & Business</p>
+                <p class="dark:bg-gray-500 font-medium text-sm md:text-lg bg-[#E6EBF3] rounded-full text-center py-1.5 transition-all hover:bg-[#969da9] cursor-pointer delay-300">Commodities | Forex</p>
+                <p class="font-medium text-sm md:text-lg  rounded-full text-center py-3">Fixed Income</p>
+                <button class="font-medium text-sm md:text-lg  rounded-sm text-center py-1 w-full text-white transition-all hover:scale-y-105 delay-200 bg-[#5677AC]">Continue</button>
+            </div>
+        </section>
+    </section>
+</section>
+
+ <footer>
+    <p class="font-semibold text-lg md:text-xl text-center p-1 ">Copyright &copy; <span class="font-serif">Auly ullah 2024</span></p>
+ </footer>
+
+ <script>
+    const htmlTag = document.getElementById("htmlTag")
+    document.getElementById("moon").addEventListener("click", function(){
+     htmlTag.classList.toggle("dark");
+    })
+  </script>
+
+
+</body>
+</html>
